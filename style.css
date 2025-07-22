@@ -245,6 +245,68 @@ nav ul li a:hover::after {
     line-height: 1.2;
     color: #555;
 }
+.contact-section{
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.contact-section .section-title{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.contact-intro{
+  margin-bottom: 40px;
+}
+.contact-form{
+  max-width: 700px;
+  margin:0 auto;
+  text-align: left
+}
+.form-group{
+  margin-bottom: 20px;
+}
+.form-group label{
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+
+}
+
+.form-group label span{
+  color: red;
+}
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  transition: .3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color: #f5a623;
+  outline: none;
+
+}
+.contact-form .btn{
+  padding: 14px 24px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer
+  ;
+  background-color: #f5a623;
+  transition: background-color .3 ease;
+}
+.contact-form .btn:hover{
+  background-color: #d48806;
+}
 /* ========== ANIMATIONS ========== */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
