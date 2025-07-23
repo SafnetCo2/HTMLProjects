@@ -331,6 +331,7 @@ nav ul li a:hover::after {
 .footer-container {
     display: flex;
     justify-content: space-around;
+    
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -352,6 +353,7 @@ nav ul li a:hover::after {
 .footer a {
     color: #111;
     text-decoration: none;
+    list-style: none;
 }
 
 .footer a:hover {
