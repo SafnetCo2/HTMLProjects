@@ -40,7 +40,7 @@ nav {
   width: 10px;
   height: auto;
   margin: 2px;
-  color: #00bfa6;
+  color: #0083bf;
 
  
   
@@ -125,8 +125,8 @@ nav ul li a:hover::after {
   display: inline-block;
   padding: 12px 30px;
   font-size: 16px;
-  background: #00bfa6;
-  color: #fff;
+  background: #e0f7fa;
+  color: #000;
   border: none;
   border-radius: 30px;
   text-decoration: none;
@@ -135,7 +135,7 @@ nav ul li a:hover::after {
 }
 
 .header-intro .btn:hover {
-  background: #009e8b;
+  background: #b6b4b4;
 }
 
 .header-image {
@@ -301,20 +301,21 @@ nav ul li a:hover::after {
   border-radius: 8px;
   cursor: pointer
   ;
-  background-color: #f5a623;
+  background-color: #eee;
   transition: background-color .3 ease;
 }
 .contact-form .btn:hover{
-  background-color: #d48806;
+  background-color: #eee;
 }
 #btn{
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   font-size: 18px;
   cursor: pointer;
+  background-color: #e0f7fa;
 }
 #btn:hover{
-  background-color: #d48806;
+  background-color: #a7aaac;
   color: #fff;
 }
 /*============footer ===========*/
@@ -367,6 +368,7 @@ nav ul li a:hover::after {
     border-top: 1px solid #444;
     margin-top: 30px;
 }
+
 
 /* ========== ANIMATIONS ========== */
 @keyframes float {
