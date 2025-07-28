@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        const scriptURL = "https://script.google.com/macros/s/AKfycbx_2-14sQ16kLK-PNTVf97_isndBGXl9vJ950jOZlG7qOjAVqoYaH7RiyhpwSkWylrN7Q/exec";
+        const scriptURL = "https://script.google.com/macros/s/AKfycbxt7BjNBozNnNWPmcdipZSB4VABTXgNAP5_QQ2f7uJnTJ7TpyhgUvYLl124jr1y76GvJA/exec";
 
         const formData = new FormData();
         formData.append("name", name);
@@ -39,4 +39,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("There was a problem submitting your message.");
             });
     });
-});
+})
+
+
+
+
+
+
+    < script >
+  // Automatically show today's date
+  const updatedDate = new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+document.getElementById('last-updated').textContent = updatedDate;
+</script >
