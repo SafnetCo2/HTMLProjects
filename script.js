@@ -15,7 +15,7 @@
     return;
         }
 
-        const scriptURL = "hhttps://script.google.com/macros/s/AKfycbz8lLmt4F3jc8ZL5fh_Ijey_iiaMUUZOXEsd7wglYqBG6N-fpfvDj4amlTjwCl0PcOU5A/exec"; 
+        const scriptURL = "https://script.google.com/macros/s/AKfycbz8lLmt4F3jc8ZL5fh_Ijey_iiaMUUZOXEsd7wglYqBG6N-fpfvDj4amlTjwCl0PcOU5A/exec"; 
 
     const data = {name, email, subject, message};
 
