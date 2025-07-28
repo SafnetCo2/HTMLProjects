@@ -16,15 +16,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const scriptURL = "https://script.google.com/macros/s/AKfycbxt7BjNBozNnNWPmcdipZSB4VABTXgNAP5_QQ2f7uJnTJ7TpyhgUvYLl124jr1y76GvJA/exec";
 
-        const formData = new FormData();
-        formData.append("name", name);
-        formData.append("email", email);
-        formData.append("subject", subject);
-        formData.append("message", message);
+        const data = {
+            name: name,
+            email: email,
+            subject: subject,
+            message: message
+        };
 
         fetch(scriptURL, {
             method: "POST",
-            body: formData
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
         })
             .then(response => {
                 if (response.ok) {
@@ -39,19 +43,4 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("There was a problem submitting your message.");
             });
     });
-})
-
-
-
-
-
-
-    < script >
-  // Automatically show today's date
-  const updatedDate = new Date().toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
-document.getElementById('last-updated').textContent = updatedDate;
-</script >
+});
