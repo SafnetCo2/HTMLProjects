@@ -15,14 +15,15 @@
     return;
         }
 
-        const scriptURL = "https://script.google.com/macros/s/AKfycbz8lLmt4F3jc8ZL5fh_Ijey_iiaMUUZOXEsd7wglYqBG6N-fpfvDj4amlTjwCl0PcOU5A/exec"; 
+        const scriptURL = "https://script.google.com/macros/s/AKfycbwYZ6WD4oOhEipuY84W9Yz9Lw2xDI5_HAvBUgVz7qIOQ4f5k4j56AkZKv586aMJxeBa7A/exec"; 
 
     const data = {name, email, subject, message};
 
     fetch(scriptURL, {
         method: "POST",
-    headers: {
-        "Content-Type": "text/plain;charset=utf-8" // Avoids CORS preflight
+        headers: {
+            "Content-Type": "application/json"
+
             },
     body: JSON.stringify(data)
         })
