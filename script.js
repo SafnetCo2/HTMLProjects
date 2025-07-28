@@ -15,7 +15,7 @@
     return;
         }
 
-        const scriptURL = "https://script.google.com/macros/s/AKfycbzfpYEN65gd4oaTOJhR3kFyeeaSZQEjTFgbEwUmx7xDKwmI9GoLidZRU4SBjfxMS0ZxLQ/exec"; 
+        const scriptURL = "hhttps://script.google.com/macros/s/AKfycbz8lLmt4F3jc8ZL5fh_Ijey_iiaMUUZOXEsd7wglYqBG6N-fpfvDj4amlTjwCl0PcOU5A/exec"; 
 
     const data = {name, email, subject, message};
 
@@ -43,8 +43,8 @@
     // Optional: update date on the page
     const updatedDate = new Date().toLocaleDateString('en-US', {
         year: 'numeric',
-    month: 'long',
-    day: 'numeric'
+        month: 'long',
+        day: 'numeric'
     });
     const lastUpdated = document.getElementById('last-updated');
     if (lastUpdated) {
