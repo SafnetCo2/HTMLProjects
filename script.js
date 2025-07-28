@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        const scriptURL = "https://script.google.com/macros/s/AKfycbxt7BjNBozNnNWPmcdipZSB4VABTXgNAP5_QQ2f7uJnTJ7TpyhgUvYLl124jr1y76GvJA/exec";
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzgpqI96O5Eg6epe_inQeFl7lMmsibm-xN2TOPYpexHQSIqJZtEO-WmdMOgR0MJwu-N8Q/exec";
 
         const data = {
             name: name,
