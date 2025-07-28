@@ -1,46 +1,54 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+    document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const subject = form.subject.value.trim();
-        const message = form.message.value.trim();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const subject = form.subject.value.trim();
+    const message = form.message.value.trim();
 
-        if (!name || !email || !subject || !message) {
-            alert("Please fill in all fields.");
-            return;
+    if (!name || !email || !subject || !message) {
+        alert("Please fill in all fields.");
+    return;
         }
 
-        const scriptURL = "https://script.google.com/macros/s/AKfycbzgpqI96O5Eg6epe_inQeFl7lMmsibm-xN2TOPYpexHQSIqJZtEO-WmdMOgR0MJwu-N8Q/exec";
+        const scriptURL = "https://script.google.com/macros/s/AKfycbzfpYEN65gd4oaTOJhR3kFyeeaSZQEjTFgbEwUmx7xDKwmI9GoLidZRU4SBjfxMS0ZxLQ/exec"; 
 
-        const data = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        };
+    const data = {name, email, subject, message};
 
-        fetch(scriptURL, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
+    fetch(scriptURL, {
+        method: "POST",
+    headers: {
+        "Content-Type": "text/plain;charset=utf-8" // Avoids CORS preflight
             },
-            body: JSON.stringify(data)
+    body: JSON.stringify(data)
         })
-            .then(response => {
-                if (response.ok) {
-                    alert("Message sent and saved to Google Sheets!");
-                    form.reset();
-                } else {
-                    alert("Submission failed. Please try again.");
-                }
-            })
-            .catch(error => {
-                console.error("Error!", error.message);
-                alert("There was a problem submitting your message.");
-            });
+        .then(response => {
+            if (response.ok) {
+        alert("Message sent and saved to Google Sheets!");
+    form.reset();
+            } else {
+        alert("Submission failed. Please try again.");
+            }
+        })
+        .catch(error => {
+        console.error("Error!", error.message);
+    alert("There was a problem submitting your message.");
+        });
     });
+
+    // Optional: update date on the page
+    const updatedDate = new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+    });
+    const lastUpdated = document.getElementById('last-updated');
+    if (lastUpdated) {
+        lastUpdated.textContent = updatedDate;
+    }
 });
+
