@@ -1,6 +1,6 @@
 //https://script.google.com/macros/s/AKfycbzhk5ByfrO04UxXyPs5DJekQ__zR8UN0JlFHCGDvJFNGkW0bGC1cno3_7IFKBp2jfCA0w/exec
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw9Yngflwy8m0mAZjbu5eBrzlEp5J5BJCzzBJc5aUww9WoxAV7vgzXUDTMPsEM3BlTUbw/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzpqCwvREMc7K1sOvW5XutbLI4uKQoAx5670TNFU8vgD2oprCrHeQxHQ2LTDLNYQnFY/exec'
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
