@@ -74,7 +74,8 @@ nav ul li a::after {
   left: 0;
   height: 2px;
   width: 0%;
-  background: #00bfa6;
+  background: #009688;
+
   transition: 0.4s ease;
 }
 
@@ -118,8 +119,9 @@ nav ul li a:hover::after {
   display: inline-block;
   padding: 12px 30px;
   font-size: 16px;
-  background: #e0f7fa;
-  color: #000;
+  
+  background: #009688;
+  color: #fff;
   border: none;
   border-radius: 30px;
   text-decoration: none;
@@ -128,7 +130,8 @@ nav ul li a:hover::after {
 }
 
 .header-intro .btn:hover {
-  background: #b6b4b4;
+  background: #00796b;
+
 }
 
 .header-image {
@@ -136,6 +139,14 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: center;
 }
+button, .btn {
+  transition: all 0.3s ease-in-out;
+}
+.section-title {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
 
 .header-image img {
   max-width: 340px;
@@ -152,7 +163,7 @@ nav ul li a:hover::after {
 }
 .close-icon{
   display: none;
-  font-size: 18px;
+  font-size: 30px;
   cursor: pointer;
 }
 /* ========== ABOUT SECTION ========== */
@@ -299,7 +310,8 @@ nav ul li a:hover::after {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #f5a623;
+  border-color: #ff9800;
+
   outline: none;
 }
 
@@ -358,7 +370,9 @@ nav ul li a:hover::after {
 }
 
 .footer h3, .footer h4 {
-  color: #f5a623;
+  color: #ff9800;
+
+  
   margin-bottom: 10px;
 }
 
@@ -437,8 +451,9 @@ nav ul li a:hover::after {
   position: absolute;
   display: block;
   top: 20px;
-  left: 20px;
-}
+  left: 10px;
+  color: red;
+  }
   #header {
     flex-direction: column;
     text-align: center;
@@ -473,6 +488,7 @@ nav ul li a:hover::after {
 
   .nav-links {
     position: fixed;
+    font-size: 30px;
     right: -100%;
     top: 0;
     height: 100vh;
