@@ -20,6 +20,16 @@ form.addEventListener('submit', e => {
     }, 5000);
     
 });
+//hamburger menu
+const menuIcon = document.getElementById("menu-icon");
+const navLinks = document.getElementById("nav-links");
+const closeIcon = document.getElementById("close-links");
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.add('active');
+});
+closeIcon.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+});
 
 
 
