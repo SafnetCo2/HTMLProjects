@@ -10,6 +10,7 @@ form.addEventListener('submit', e => {
         .catch(error => console.error('Error!', error.message))
     form.reset();
     alert('message sent successful!')
+    alert('Thank you')
 });
 
 
