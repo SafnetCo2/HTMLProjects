@@ -9,8 +9,16 @@ form.addEventListener('submit', e => {
         .then(response => console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
     form.reset();
-    alert('message sent successful!')
-    alert('Thank you')
+    // alert('message sent successful!')
+    // alert('Thank you')
+    //set a thank you message
+    const message = document.getElementById('form-response').style.display = 'block';
+    //hide after 5s
+    setTimeout(() => {
+        message.style.display = 'none'
+        
+    }, 5000);
+    
 });
 
 
