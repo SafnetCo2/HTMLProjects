@@ -141,10 +141,37 @@ function restartQuiz() {
     startTimer();
 }
 
+// function endQuiz() {
+//     clearInterval(timeInterval);
+//     questionEl.textContent = "🎉 Quiz Completed!";
+//     optionsEl.innerHTML = `<h3>Your final score is ${score}/${quizData.length}</h3>`;
+//     navBox.style.display = "none";
+//     timerBox.style.display = "none";
+//     document.getElementById("restart").style.display = "inline-block";
+// }
 function endQuiz() {
     clearInterval(timeInterval);
     questionEl.textContent = "🎉 Quiz Completed!";
-    optionsEl.innerHTML = `<h3>Your final score is ${score}/${quizData.length}</h3>`;
+    optionsEl.innerHTML = ""; // Clear previous content
+
+    const percentage = (score / quizData.length) * 100;
+    const success = percentage >= 50;
+
+    const resultMessage = success ? "🎉 Congratulations! " : "😢 Try Again! ";
+    const scoreMessage = `Your final score is ${score}/${quizData.length}`;
+    const fullMessage = resultMessage + scoreMessage;
+
+    const h3 = document.createElement("h3");
+    optionsEl.appendChild(h3);
+
+    let i = 0;
+    const typingInterval = setInterval(() => {
+        h3.textContent += fullMessage.charAt(i);
+        i++;
+        if (i >= fullMessage.length) {
+            clearInterval(typingInterval);
+        }
+    }, 120);
     navBox.style.display = "none";
     timerBox.style.display = "none";
     document.getElementById("restart").style.display = "inline-block";

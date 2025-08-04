@@ -338,7 +338,6 @@ button, .btn {
 
 .project-card h3{
   font-size: 30px;
-  text-align: center;
   letter-spacing: .2rem;
   color: #111;
   margin-bottom: 20px;
@@ -377,33 +376,127 @@ button, .btn {
 #score-box,#timer{
   margin-top: 20px;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 .project-card:hover {
   transform: translateY(-5px);
 }
+.navigation button{
+  border-radius: .5rem;
+}
+.navigation  button:hover{
+  background-color: #00796b;
+  color: #fff;
+  font-size: 1rem;
+}
+/* .restart{
+  background-color: #a7aaac;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  border-radius: .5rem;
+  padding: 8px 10px;
+} */
 
-
-
-
-.btn-project {
+.restart {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 14px;
-  background-color: #007bff;
-  color: white;
+  background-color: #a7aaac;
+  color: #000;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 1.5rem;
   transition: background 0.3s ease;
 }
 
-.btn-project:hover {
-  background-color: #0056b3;
+.restart:hover {
+  background-color: #009688;
 }
+/* ========== container-more-projects SECTION ========== */
+.container-more-projects{
+  padding: 50px 20px;
+  margin: 60px auto;
+  text-align: center;
+
+}
+.container-more-projects h1{
+  font-size: 1.5rem;
+  letter-spacing: .5rem;
+  margin-bottom: 30px;
+}
+.btn-cards-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+/* ========== KEYFRAMES ========== */
+
+@keyframes color-blink {
+  0%, 20%, 100% {
+    filter: brightness(1);
+  }
+  10% {
+    filter: brightness(1.5);
+  }
+}
+
+/* ========== GENERAL BUTTON STYLE ========== */
+.btn-cards-grid .btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+  z-index: 1;
+  position: relative;
+  animation-name: color-blink;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* ========== BASE COLORS ========== */
+.btn-cards-grid .btn:nth-child(1) {
+  background-color: #e34c26; /* HTML */
+  animation-delay: 0s;
+}
+.btn-cards-grid .btn:nth-child(2) {
+  background-color: #68217A; /* C# */
+  animation-delay: 1s;
+}
+.btn-cards-grid .btn:nth-child(3) {
+  background-color: #3572A5; /* Python */
+  animation-delay: 2s;
+}
+.btn-cards-grid .btn:nth-child(4) {
+  background-color: #f0db4f; /* JavaScript */
+  color: #000;
+  animation-delay: 3s;
+}
+.btn-cards-grid .btn:nth-child(5) {
+  background-color: #61DBFB; /* React */
+  color: #000;
+  animation-delay: 4s;
+}
+
+
+.btn-cards-grid .btn:hover {
+  animation: none !important;
+  background-color: #aaa !important;
+  color: #000 !important;
+}
+
+
 
 /* ========== CONTACT SECTION ========== */
 .contact-section {
   padding: 60px 20px;
+
   background: linear-gradient(135deg, #e0f7fa, #ffffff);
 
   text-align: center;
