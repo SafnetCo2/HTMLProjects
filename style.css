@@ -431,7 +431,33 @@ button, .btn {
   gap: 20px;
 }
 
+.btn-cards-grid .project-card {
+  width: 240px;
+}
+.btn-cards-grid .project-card ul{
+  
+  text-align: left;
+  padding: 0;
+  margin-top: 20px;
 
+
+}
+h5{
+  margin-top: 20px;
+  font-size: 16px;
+}
+.btn-cards-grid .project-card ul li {
+  margin: 5px 0;
+}
+.btn-cards-grid .project-card ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-cards-grid .project-card ul li a:hover {
+  text-decoration: underline;
+}
 /* ========== KEYFRAMES ========== */
 
 @keyframes color-blink {
@@ -490,6 +516,7 @@ button, .btn {
   background-color: #aaa !important;
   color: #000 !important;
 }
+
 
 
 
