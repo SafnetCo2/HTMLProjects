@@ -487,24 +487,28 @@ h5{
 }
 
 /* ========== BASE COLORS ========== */
-.btn-cards-grid .btn:nth-child(1) {
+.project-card:nth-child(1) .btn {
   background-color: #e34c26; /* HTML */
   animation-delay: 0s;
 }
-.btn-cards-grid .btn:nth-child(2) {
+
+.project-card:nth-child(2) .btn {
   background-color: #68217A; /* C# */
   animation-delay: 1s;
 }
-.btn-cards-grid .btn:nth-child(3) {
+
+.project-card:nth-child(3) .btn {
   background-color: #3572A5; /* Python */
   animation-delay: 2s;
 }
-.btn-cards-grid .btn:nth-child(4) {
+
+.project-card:nth-child(4) .btn {
   background-color: #f0db4f; /* JavaScript */
   color: #000;
   animation-delay: 3s;
 }
-.btn-cards-grid .btn:nth-child(5) {
+
+.project-card:nth-child(5) .btn {
   background-color: #61DBFB; /* React */
   color: #000;
   animation-delay: 4s;
