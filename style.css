@@ -521,6 +521,40 @@ h5{
   color: #000 !important;
 }
 
+@media (max-width: 320px) {
+  .btn-cards-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-cards-grid .project-card {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .btn-cards-grid .project-card ul {
+    margin-top: 10px;
+    padding-left: 15px;
+  }
+
+  .btn-cards-grid .project-card ul li a.btn {
+    display: block;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #222;
+    text-decoration: none;
+    word-break: break-word;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-cards-grid .project-card ul li a:hover {
+    background-color: #e0e0e0;
+  }
+}
 
 
 
