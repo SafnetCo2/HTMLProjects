@@ -525,6 +525,7 @@ h5{
   .btn-cards-grid {
     flex-direction: column;
     align-items: center;
+    display: block;
   }
 
   .btn-cards-grid .project-card {
@@ -809,4 +810,45 @@ h5{
 span{
   color: #009688;
   font-weight: 600;
+}
+@media (max-width: 320px) {
+  .btn-cards-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-cards-grid .project-card {
+    width: 100%;
+    max-width: 260px;
+    padding: 10px;
+  }
+
+  .btn-cards-grid .project-card ul {
+    margin-top: 10px;
+    padding-left: 0;
+  }
+
+  .btn-cards-grid .project-card ul li {
+    list-style: none;
+    margin-bottom: 8px;
+  }
+
+  .btn-cards-grid .project-card ul li a {
+    display: block;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-decoration: none;
+    word-break: break-word;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .btn-cards-grid .project-card ul li a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
 }
